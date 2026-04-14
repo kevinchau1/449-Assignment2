@@ -5,9 +5,9 @@
 ### 1. DELETE Endpoint (`BookController.java`)
 Add a DELETE endpoint to your existing BookController that deletes a book by its ID. The endpoint should be:
 `DELETE /api/books/{id}`
-### Admin Delete 200 Success:
+Admin Delete 200 Success:
 <img width="1485" height="937" alt="deletebookadmin" src="https://github.com/user-attachments/assets/678de01d-3b5b-4bb0-80f1-666658439a73" />
-### Admin Delete 404 Book ID Not Found:
+Admin Delete 404 Book ID Not Found:
 <img width="1474" height="695" alt="notfound" src="https://github.com/user-attachments/assets/51f62f18-1899-4388-9e5e-ec72338575ef" />
 
 ---
@@ -17,9 +17,9 @@ Protected the DELETE endpoint so only users with the ADMIN role can access it.
 
 ### 3. Register ADMIN User
 Using Postman, register a new user with both USER and ADMIN roles using the /api/auth/register endpoint:
-### Register Admin:
+Register Admin:
 <img width="1537" height="939" alt="createADMIN" src="https://github.com/user-attachments/assets/51930299-0e0e-4bcb-83d9-c55420c8d22d" />
-### Register User:
+Register User:
 <img width="1494" height="898" alt="userOneReigsete" src="https://github.com/user-attachments/assets/7afdb48b-8469-49a4-8ddc-ffd8151da1f5" />
 
 ---
