@@ -5,6 +5,7 @@
 ### 1. DELETE Endpoint (`BookController.java`)
 Add a DELETE endpoint to your existing BookController that deletes a book by its ID. The endpoint should be:
 `DELETE /api/books/{id}`
+
 Admin Delete 200 Success:
 <img width="1485" height="937" alt="deletebookadmin" src="https://github.com/user-attachments/assets/678de01d-3b5b-4bb0-80f1-666658439a73" />
 Admin Delete 404 Book ID Not Found:
@@ -26,6 +27,7 @@ Register User:
 
 ### 4. Test Scenario 1 — ADMIN can delete (must pass)
 Log in as the admin user, copy the JWT token, and make a DELETE request to /api/books/{id} with the token in the Authorization header. The book should be deleted successfully and return 200 OK.
+
 Step 1: Login as Admin:
 <img width="1539" height="948" alt="loginADMIN" src="https://github.com/user-attachments/assets/c7b4f0a3-6446-40fb-aaa7-5a8a494d39ea" />
 Step 2: Make A Delete Request to /api/books/{id} with the Authorization token:
@@ -36,6 +38,7 @@ Returned 200 OK Success.
 
 ###5. Test Scenario 2 — USER cannot delete (must pass)
 Register a second user with only the USER role. Log in as that user, copy the JWT token, and make a DELETE request to /api/books/{id} with that token. The response must be 403 Forbidden — not 401 Unauthorized. Include the proper Spring Security exception message in the response body.
+
 Step 1: Login as User:
 <img width="1491" height="909" alt="userOneLogin" src="https://github.com/user-attachments/assets/327308b0-0243-449e-9ad5-2ea0489c7865" />
 Step 2: Make A Delete Request to /api/books/{id} with the Authorization token:
