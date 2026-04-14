@@ -37,7 +37,7 @@ Using Postman, register a new user with both USER and ADMIN roles using the /api
 
 ---
 
-###5. Test Scenario 2 — USER cannot delete (must pass)
+### 5. Test Scenario 2 — USER cannot delete (must pass)
 **Register a second user with only the USER role. Log in as that user, copy the JWT token, and make a DELETE request to /api/books/{id} with that token. The response must be 403 Forbidden — not 401 Unauthorized. Include the proper Spring Security exception message in the response body.**
 
 **Step 1: Login as User:**
@@ -45,6 +45,9 @@ Using Postman, register a new user with both USER and ADMIN roles using the /api
 **Step 2: Make A Delete Request to /api/books/{id} with the Authorization token:**
 <img width="1473" height="937" alt="accessDenied" src="https://github.com/user-attachments/assets/49f6e770-faaf-42cc-a7e0-8da834586caf" />
 **Returned 403 Forbidden, Access Denied text in JSON.**
+
+### Concluding Thoughts:
+This assignment helped me understand authroization better and how to implement role based access control. The most important thing I learned was how Spring Security processes requests. Before, I did not really stand the difference between authentication and authorization. However, now I have a better understanding of what the error codes 401 and 403 statuses reflect USING security.
 
 
 
