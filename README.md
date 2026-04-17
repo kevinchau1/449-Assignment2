@@ -6,7 +6,7 @@
 Add a DELETE endpoint to your existing BookController that deletes a book by its ID. The endpoint should be:
 `DELETE /api/books/{id}`
 
-**Admin Delete 200 Success:**
+**Admin Delete 200 OK response, with token visible:**
 <img width="1485" height="937" alt="deletebookadmin" src="https://github.com/user-attachments/assets/678de01d-3b5b-4bb0-80f1-666658439a73" />
 **Admin Delete 404 Book ID Not Found:**
 <img width="1474" height="695" alt="notfound" src="https://github.com/user-attachments/assets/51f62f18-1899-4388-9e5e-ec72338575ef" />
